@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">Etch A Sketch</header>
+
+    <section class="main">
+        <div class="gridContainer"></div>
+        <div class="settings">
+            <div class="colors">
+                <input class="colorSelector" type="color" value="#333333">
+                <button class="selectedColor">Single Color Mode</button>
+            </div>
+            <div class="right"> 
+                <button class="gridLine">Hide Gridline</button>
+                <button class="eraser">Eraser Mode</button>
+                <button class="clear">Clear All</button>
+                <button class="rgb">RGB Mode</button>
+                <div class="size">16 x 16</div>
+                <input class="slider" type="range"  value = "16" min="1" max="64">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">Created by: mustbeneru</footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+.header {
+    font-size: 40px;
+    padding: 16px;
+    background-color: rgb(95, 138, 139);
+    margin-bottom: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 550px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type='color'] {
+    width: 50px;
+    height: 30px;
+    border: none;
+  }
+
+button {
+    background-color: rgb(228, 211, 199);
+    border-radius: 30px;
+    padding: 10px 30px;
+    color:rgb(0, 0, 0);
+}
+
+.size {
+    margin-top: 20px;
+}
+
+.gridContainer{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.gridItems {
+    border: 1px solid gray;
+}
+
+button:hover,
+input[type='color']:hover,
+.active {
+  transform: scale(1.05);
+}
+
+.active {
+    transition: all .7s;
+    background-color: rgba(151, 195, 201, 0.925);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #a8bec0;
+    color: rgb(62, 44, 129);
+    padding: 10px;
+    font-size: 15px;
+}
